@@ -2,9 +2,13 @@ body
 {
     margin: 0;
     padding: 0;
+}
+p,h1,span
+{
+    font-weight: 500;
     font-family: 'DM Sans',sans-serif;
     letter-spacing: 0%;
-    
+    margin: 0;
 }
 .head
 {
@@ -185,16 +189,10 @@ body
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
-
 .search-filter-bar .search-button:hover 
 {
     background-color: #acacac; 
 }
-.search-filter-bar .search-button:active 
-{
-    transform: scale(0.98); 
-}
-
 .search-filter-bar .search-button .search-icon 
 {
     width: 16px; 
@@ -205,11 +203,14 @@ body
 .hero-content 
 {
     position: absolute;
-    top: 40%; 
+    top: 40%;
     left: 30%;
     color: white;
-    text-align: center; 
-    z-index: 10; /* S'assure qu'il est au-dessus des autres éléments s'il y a chevauchement */
+    text-align: center;
+    gap: 2rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-content .hero-subtitle 
@@ -222,7 +223,6 @@ body
 {
     font-size: 70px; 
     font-weight: 700;
-
     line-height: 70px;
     text-align: center;
     vertical-align: middle;
@@ -252,9 +252,10 @@ body
     transition: all 0.3s ease; 
 }
 
-.hero-content .btn-primary{
+.hero-content .btn-primary
+{
     background-color: white;
-    color: #1A202C; /* Couleur de texte foncée (un noir/gris bleuté) */
+    color: #1A202C; 
     border: 2px solid white;
 }
 
@@ -282,4 +283,85 @@ body
 {
     width: 18px; 
     height: 18px;
+}
+.P11
+{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}
+.P11 h1
+{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.P11 span
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+.P11G
+{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.P11G:hover
+{
+    color: #aaaaaa;
+    transition: 0.5s;
+}
+.P12 
+{
+    margin: 1rem;
+}
+
+.type-buttons-container-simple
+{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px;      
+    justify-content: center; 
+}
+
+.type-button-simple 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; 
+    border-radius: 10px; 
+    
+    padding: 16px 12px; 
+    min-width: 90px;  
+    height: 90px; 
+    
+    text-align: center;
+    font-size: 0.8rem; 
+    font-weight: 500;
+    color: #2d3748;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.type-button-simple:hover 
+{
+    border-color: #cbd5e0; 
+}
+
+.car-type-icon-simple 
+{
+    width: 28px;  
+    height: 28px;
+    fill: #4a5568; 
 }
