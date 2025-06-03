@@ -1,0 +1,285 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans',sans-serif;
+    letter-spacing: 0%;
+    
+}
+.head
+{
+    position: relative;
+}
+.head img 
+{
+    display: block; 
+    width: 100%;   
+    height: auto;  
+}
+.Contenu
+{ 
+    position: absolute; 
+    top: 1rem;             
+    left: 0;            
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    box-sizing: border-box; 
+    color: white; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headG
+{
+    display: flex;
+    
+    gap: 1.5rem;
+
+}
+.headG h1
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27.75px;
+    vertical-align: middle;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.headG h1:hover
+{
+    color: rgb(146, 146, 146);
+    transition: 0.5s;
+}
+.titre
+{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.titre img
+{
+    width: 8px;
+    height: 4px;
+}
+.headC
+{
+    width: 108px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+.headD
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27.75px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.headD button
+{
+    width: 152px;
+    height: 47px;
+    color: white;
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+    border-radius:46px ;
+    cursor: pointer;
+}
+.headD button:hover
+{
+    color: rgb(146, 146, 146);
+    transition: 0.5s;
+}
+.headD button:active 
+{
+    transform: scale(0.98); 
+}
+.Sign
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.Sign img
+{
+    width: 14px;
+    height: 15px;
+}
+.Sign h1
+{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27.75px;
+}
+
+.search-filter-bar 
+{
+    position: absolute;
+    top: 20%; 
+    left: 25%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(60, 70, 85, 0.15); 
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    border-radius: 50px; 
+    padding: 10px 15px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25); 
+    color: white; 
+    gap: 2rem;
+}
+
+.search-filter-bar .filter-group hr
+{
+    border: none; 
+    border-left: 1px solid rgba(255, 255, 255, 0.4); 
+    height: 16px;  
+    margin: 0;                       
+    align-self: center; 
+}
+.search-filter-bar .filter-group 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.search-filter-bar .filter-item 
+{
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    cursor: pointer;
+    padding: 6px 10px; 
+    font-size: 14px; 
+}
+
+.search-filter-bar .filter-item:hover 
+{
+    color: #aaaaaa; 
+    transition: 0.5s;
+}
+
+.search-filter-bar .filter-item img 
+{ 
+    width: 9px; 
+    height: 5px;
+}
+.search-filter-bar .search-button 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white; 
+    color: #2D3748; 
+    border: none;
+    border-radius: 30px; 
+    padding: 1rem 2rem; 
+    font-weight: 500; 
+    font-size: 15px; 
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.search-filter-bar .search-button:hover 
+{
+    background-color: #acacac; 
+}
+.search-filter-bar .search-button:active 
+{
+    transform: scale(0.98); 
+}
+
+.search-filter-bar .search-button .search-icon 
+{
+    width: 16px; 
+    height: 16px;
+    fill: #2D3748; 
+    
+}
+.hero-content 
+{
+    position: absolute;
+    top: 40%; 
+    left: 30%;
+    color: white;
+    text-align: center; 
+    z-index: 10; /* S'assure qu'il est au-dessus des autres éléments s'il y a chevauchement */
+}
+
+.hero-content .hero-subtitle 
+{
+    font-size: 16px; 
+    font-weight: 400;
+}
+
+.hero-content .hero-title 
+{
+    font-size: 70px; 
+    font-weight: 700;
+
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hero-content .hero-buttons 
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem; 
+}
+
+.hero-content .btn 
+{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem; 
+    padding: 0.8rem 1.8rem; 
+
+    font-size: 0.95rem; 
+    font-weight: 500; 
+    
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.hero-content .btn-primary{
+    background-color: white;
+    color: #1A202C; /* Couleur de texte foncée (un noir/gris bleuté) */
+    border: 2px solid white;
+}
+
+.hero-content .btn-primary:hover 
+{
+    background-color: #c2c2c3; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-content .btn-secondary 
+{
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8); 
+}
+
+.hero-content .btn-secondary:hover 
+{
+    background-color: rgba(124, 123, 123, 0.1); 
+    border-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-content .hero-btn-icon 
+{
+    width: 18px; 
+    height: 18px;
+}
