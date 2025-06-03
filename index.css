@@ -365,3 +365,82 @@ p,h1,span
     height: 28px;
     fill: #4a5568; 
 }
+.P13 
+{   
+    position: relative;
+    display: flex;
+    gap: 30px; 
+    align-items: flex-start; 
+    padding: 30px;
+    color: rgb(220, 220, 220); 
+}
+.P13G
+{
+    position: relative;
+    width: auto;
+    height: 37.5rem;
+}
+.P13G .image1
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.P13G .image2
+{
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+}
+.P13G .image3
+{
+    position: absolute;
+    left: 19.5rem;
+    bottom: 0;
+}
+.rond1
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #405FF212;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.P13D
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    gap: 2rem;
+    color: black;
+}
+.P13D_liste
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.P13D_ligne
+{
+    display: flex;
+    gap: 1rem;
+}
+.Getstarted
+{
+    width: 158px;
+    height: 53px;
+    background-color: #405FF2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    border-radius: 12px;
+    border: none;
+}
